@@ -10,7 +10,8 @@
         width: 960px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 5%;
+        text-align: center;
+        /* padding-top: 5%; */
       }
       #articles {
         display: inline-block;
@@ -35,30 +36,51 @@
         height: 200px;
         font-size: 18px;
       }
+      .ftr{
+          background-color: rgb(255, 189, 127);
+          color: maroon;
+      }
+      h2{
+          text-align: center;
+          color: rgb(247, 247, 157);
+      }
+      .navbar{
+         text-align: center;
+         padding: 2%;
+      }
+      h1{
+          color: greenyellow;
+      }
     </style>
 </head>
 
 <body>
-    <div id="navbar">
-    <nav class="navbar navbar-inverse bg-primary">
-        <h2 class="hdr"><strong>Scraping using Mongoose</strong></h2>
+
+    <h2 class="hdr"><strong>Scraping using Mongoose</strong></h2>
+    <div class="navbar">
+        <nav class="navbar navbar-inverse bg-primary">
+
+            <button class="srbtn" id="scrapBtn" type="button">Scrap new Articles</button>
+            <button class="svbtn" id="saveBtn" type="button">Saved Articles</button>
+            <button class="clbtn" id="clrBtn" type="button">Clear Articles</button>
     </div>
 
     <div id="wrapper">
-            
-      <h1>Note Scraper</h1>
-      <h2><i>There are no articles! Scrape some articles</i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
+
+        <h1>Note Scraper</h1>
+        <h2><i>There are no articles! Scrape some articles</i></h2>
+        <div id="articles"></div>
+        <div id="notes"></div>
     </div>
-    <footer class="footer">
-            <div class="footerDiv">
-                <h2 class="ftr"><strong>Currently you have no articles saved. You may click "Scrape New Articles" to save some.</strong></h2>
-            </div>
+    <footer>
+        <div class="footerDiv">
+            <h2 class="ftr"><strong>Currently you have no articles saved. You may click "Scrape New Articles" to save
+                    some.</strong></h2>
+        </div>
     </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
