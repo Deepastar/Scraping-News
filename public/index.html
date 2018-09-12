@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scraping With Mongoose</title>
+    <style>
+        body { background-color: rgb(143, 10, 103) }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: rgb(252, 199, 221);
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+    <nav class="navbar navbar-inverse bg-primary">
+        <h2 class="hdr"><strong>Scraping using Mongoose</strong></h2>
+        <a href="https://iccinternational.com/blog/">
+            <button type="button" class="btn homeBtn"><strong>Home</strong></button>
+        </a>
+
+        <a href="/articles">
+            <button type="button" class="btn savedArticles"><strong>Saved Articles</strong></button>
+        </a>
+    </div>
+
+    <div id="wrapper">
+            
+      <!-- <h1>Note Scraper</h1>
+      <h2><i>There are no articles! Scrape some articles</i></h2>
+      <div id="articles"></div>
+      <div id="notes"></div> -->
+    </div>
+    <footer class="footer">
+            <div class="footerDiv">
+                <h2 class="ftr"><strong>Currently you have no articles saved. You may click "Scrape New Articles" to save some.</strong></h2>
+            </div>
+    </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
