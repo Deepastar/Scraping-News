@@ -29,7 +29,16 @@ $.getJSON("/articles", function (data) {
     }
 });
 
-// Whenever someone clicks a p tag
+$(document).on("click","#scrapBtn", function(){
+    event.preventDefault();
+    $.ajax({
+        method: "POST",
+        url: "/articles/" + thisId
+    }).then(function(data){
+    console.log(data);
+});
+
+// Whenever someone clicks a h2 tag
 $(document).on("click", "h2", function () {
     // Empty the notes from the note section
     $("#notes").empty();
